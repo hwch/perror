@@ -1,4 +1,1 @@
-perror
-======
-
-print more details error infomation
+<div>perror</div><div>======</div><div><br></div><div>print more details error infomation</div><div><br></div><div><div>package main</div><div><br></div><div>import (</div><div>&nbsp; &nbsp; &nbsp; &nbsp; "net"</div><div>&nbsp; &nbsp; &nbsp; &nbsp; "perror"</div><div>)</div><div><br></div><div>func main() {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; if _, err := net.ResolveTCPAddr("net", "localhost"); err != nil {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; perror.Perror(err)</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; perror.Verror(err)</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return</div><div>&nbsp; &nbsp; &nbsp; &nbsp; }</div><div>}</div></div>
