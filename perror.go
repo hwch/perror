@@ -7,7 +7,7 @@ import (
         "runtime"
         "strings"
 )
-
+// no dir, package information
 func Perror(err error) {
         pc, file, line, ok := runtime.Caller(1)
         if !ok {
@@ -24,7 +24,7 @@ func Perror(err error) {
                         base, line, fname[pos+1:], err)
         }
 }
-
+// more detailed information
 func Verror(err error) {
         pc, file, line, ok := runtime.Caller(1)
         if !ok {
